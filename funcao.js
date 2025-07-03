@@ -91,6 +91,7 @@ const divisao = (num1, num2) => {
   console.log("variavel escopo global:", meuPrimeiroNome);
   const numeroQualquer = 150;
   console.log(num1 / num2);
+  return numeroQualquer;
 };
 
 const subtracao = function (num1, num2) {
@@ -98,11 +99,34 @@ const subtracao = function (num1, num2) {
   console.log(numeroQualquer);
 };
 
-divisao(10, 2);
+const valorRetornado = divisao(10, 2);
 subtracao(5, 2);
+
+console.log(valorRetornado); //5
 
 //escopo de bloco e escopo global
 
 // variáveis criadas no escopo global, poderão ser acessadas dentro de um escopo de bloco
 
 // variáveis criadas no escopo de bloco, NÃO poderão ser acessadas no escopo global, só poderá utilizar ela DENTRO do bloco
+
+const listaNumeros = [3, 5, 10];
+
+function somaOsNumerosDoArray(lista) {
+  const resultado = lista[0] + lista[1] + lista[2];
+  return resultado;
+}
+
+const valorRetornado1 = somaOsNumerosDoArray(listaNumeros);
+
+console.log(valorRetornado1);
+
+// / 6. Use uma arrow function para calcular o dobro de um número e mostrar no console.log() o resultado de passar 8 como argumento.
+
+const calcularDobro = (num) => {
+  console.log(num * 2);
+};
+
+calcularDobro(8);
+
+// 23. Crie uma função anônima que receba dois números como parâmetro e retorne uma string no formato: "O número X é maior que Y" ou "X é menor que Y", dependendo da comparação.

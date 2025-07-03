@@ -88,11 +88,11 @@
 // ⸻
 
 // 23. Crie uma função anônima que receba dois números como parâmetro e retorne uma string no formato: "O número X é maior que Y" ou "X é menor que Y", dependendo da comparação.
-
+//(ANULADA - NÃO FAZER)
 // ⸻
 
 // 24. Crie um objeto produto com nome, preco, disponivel. Crie uma arrow function que receba esse objeto e retorne uma mensagem dependendo do valor booleano da propriedade disponivel.
-
+//(ANULADA - NÃO FAZER)
 // ⸻
 
 // 25. Crie duas funções: uma nomeada soma e uma arrow multiplica, ambas recebendo dois números. Faça console.log() dos resultados em escopos diferentes para mostrar que as funções podem ser acessadas de qualquer parte do código.
