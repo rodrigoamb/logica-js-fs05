@@ -108,12 +108,102 @@ function aplicaDesconto(valor) {
 
 // 7.	Crie uma função que receba o nome de um aluno e sua nota. Retorne “Aprovado” se a nota for >= 6, senão “Reprovado”.
 
+function resultadoAluno(nome, nota) {
+  if (nota >= 6) {
+    return `${nome} está Aprovado`;
+  } else {
+    return `${nome} está Reprovado`;
+  }
+}
+
 // 8.	Crie uma função que receba dois números e retorne se eles são iguais, se forem diferentes, qual deles é o maior.
 
+function comparar(a, b) {
+  if (a === b) {
+    return "Iguais";
+  } else if (a > b) {
+    return "A é maior";
+  } else {
+    return "B é maior";
+  }
+}
+
 // 9.	Crie uma função que receba um número e informe se ele é múltiplo de 3, de 5, de ambos ou de nenhum.
+
+function multiplo(numero) {
+  if (numero % 3 === 0 && numero % 5 === 0) {
+    return "Múltiplo de 3 e 5";
+  } else if (numero % 3 === 0) {
+    return "Múltiplo de 3";
+  } else if (numero % 5 === 0) {
+    return "Múltiplo de 5";
+  } else {
+    return "Não é múltiplo";
+  }
+}
 
 // 10.	Crie uma função que receba o salário de um funcionário e retorne a faixa salarial:
 
 // •	até 2000: “Baixa”
 // •	até 5000: “Média”
 // •	acima: “Alta”
+
+function faixaSalarial(salario) {
+  if (salario <= 2000) {
+    return "Baixa";
+  } else if (salario <= 5000) {
+    return "Média";
+  } else {
+    return "Alta";
+  }
+}
+
+// 11.	Crie uma função que receba a quantidade de horas dormidas. Retorne:
+
+// •	menos de 6h: “Pouco sono”
+// •	entre 6 e 8h: “Sono normal”
+// •	mais de 8h: “Muito sono”
+
+// 12.	Crie uma função que receba dois números e uma string representando a operação (“soma”, “subtração”, “multiplicação”, “divisão”) e retorne o resultado.
+// 13.	Crie uma função que receba um ano e diga se ele é bissexto (divisível por 4 e não por 100, exceto se for divisível por 400).
+// 14.	Crie uma função que receba um objeto pessoa com nome e idade. Se a idade for maior que 60, retorne “Idoso”, senão “Não idoso”.
+// 15.	Crie uma função que receba a idade de duas pessoas. Verifique se podem entrar juntas em um evento (ambas com 18+).
+// 16.	Crie uma função que receba três notas e retorne a média e a situação:
+
+// •	média >= 7: “Aprovado”
+// •	média >= 5: “Recuperação”
+// •	média < 5: “Reprovado”
+
+// 17.	Crie uma função que receba uma string e verifique se o primeiro caractere é uma vogal.
+// 18.	Crie uma função que receba um número de 0 a 10 e diga se ele está dentro da faixa ou fora.
+// 19.	Crie uma função que receba o nome de um produto e o estoque. Se o estoque for zero, retorne “Produto esgotado”, senão “Disponível”.
+// 20.	Crie uma função que receba um array com 3 números e retorne qual deles é o menor.
+
+// 21.	Crie uma função que receba um objeto carro com marca e ano. Se o carro for após 2015, retorne “Moderno”, senão “Antigo”.
+
+// 22.	Crie uma função que receba um valor booleano e retorne “Ligado” se for true, e “Desligado” se for false.
+
+// 23.	Crie uma função que receba um número e diga se ele está entre 10 e 20 (inclusive).
+
+// 24.	Crie uma função que receba um objeto usuario com a propriedade ativo (true/false). Se ativo for false, retorne “Acesso bloqueado”.
+
+// 25.	Crie uma função que receba o peso e altura e calcule o IMC. Retorne a faixa:
+
+// •	IMC < 18.5: “Abaixo do peso”
+// •	IMC < 25: “Normal”
+// •	IMC < 30: “Sobrepeso”
+// •	Acima: “Obesidade”
+
+// 26.	Crie uma função que receba uma temperatura em Celsius e indique:
+
+// •	abaixo de 10: “Muito frio”
+// •	entre 10 e 25: “Clima agradável”
+// •	acima de 25: “Muito calor”
+
+// 27.	Crie uma função que receba dois números e diga se um é divisor exato do outro.
+
+// 28.	Crie uma função que receba o turno de estudo de um aluno (“manhã”, “tarde”, “noite”) e retorne uma saudação apropriada.
+
+// 29.	Crie uma função que receba o número de faltas de um aluno. Se for maior que 25, retorne “Reprovado por falta”.
+
+// 30.	Crie uma função que receba um nome e uma idade. Se o nome for “admin” e a idade maior que 18, retorne “Acesso total”. Caso contrário, “Acesso limitado”.
