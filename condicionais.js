@@ -257,7 +257,7 @@ switch (true) {
     console.log("Idade inválida");
 }
 
-let nota = 8.2;
+let nota = 4;
 
 switch (true) {
   case nota >= 9:
