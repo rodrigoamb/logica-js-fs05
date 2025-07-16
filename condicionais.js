@@ -207,3 +207,71 @@ function faixaSalarial(salario) {
 // 29.	Crie uma função que receba o número de faltas de um aluno. Se for maior que 25, retorne “Reprovado por falta”.
 
 // 30.	Crie uma função que receba um nome e uma idade. Se o nome for “admin” e a idade maior que 18, retorne “Acesso total”. Caso contrário, “Acesso limitado”.
+
+//switch/case
+
+let diaSemana = 3;
+
+switch (diaSemana) {
+  case 1:
+    console.log("Domingo");
+    break;
+  case 2:
+    console.log("Segunda");
+    break;
+  case 3:
+    console.log("Terça");
+    break;
+  case 4:
+    console.log("Quarta");
+    break;
+  case 5:
+    console.log("Quinta");
+    break;
+  case 6:
+    console.log("Sexta");
+    break;
+  case 7:
+    console.log("Sábado");
+    break;
+  default:
+    console.log("Dia inválido");
+}
+
+let idade1 = 25;
+
+switch (true) {
+  case idade1 >= 0 && idade1 <= 12:
+    console.log("Criança");
+    break;
+  case idade1 >= 13 && idade1 <= 17:
+    console.log("Adolescente");
+    break;
+  case idade1 >= 18 && idade1 <= 59:
+    console.log("Adulto");
+    break;
+  case idade1 >= 60:
+    console.log("Idoso");
+    break;
+  default:
+    console.log("Idade inválida");
+}
+
+let nota = 8.2;
+
+switch (true) {
+  case nota >= 9:
+    console.log("Conceito A");
+    break;
+  case nota >= 7:
+    console.log("Conceito B");
+    break;
+  case nota >= 5:
+    console.log("Conceito C");
+    break;
+  case nota >= 3:
+    console.log("Conceito D");
+    break;
+  default:
+    console.log("Conceito F");
+}
