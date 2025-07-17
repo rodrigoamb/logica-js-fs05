@@ -63,3 +63,21 @@ const tenis = [
 // e o preço do puma entrou em promoção de 399.99 para 299.99
 // e o preço do reebok aumentou de 299.99 para 399.99
 // o tamanho do nike foi alterado para [42, 43, 44, 45]
+
+for (let i = 0; i < tenis.length; i++) {
+  tenis[i].estoque--;
+
+  if (tenis[i].marca === "Puma") {
+    tenis[i].preco = 299.99;
+  }
+
+  if (tenis[i].marca === "Reebok") {
+    tenis[i].preco = 399.99;
+  }
+
+  if (tenis[i].marca === "Nike") {
+    tenis[i].tamanho[tenis[i].tamanho.length] = 45;
+  }
+}
+
+console.log(tenis);
