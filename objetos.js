@@ -8,6 +8,14 @@ const nayara = {
   especialidade: "full-stack",
   corFavorita: ["preto", "azul"],
   estaCasada: true,
+
+  falar() {
+    return "Oi meu nome é Nayara!!";
+  },
+
+  andar() {
+    return "Estou andando";
+  },
 };
 
 console.log(nayara);
@@ -104,3 +112,62 @@ const outraLista = [...novaLista];
 console.log(outraLista);
 
 //objetos com métodos
+
+//O que um objeto tem? Um objeto tem propriedade e tem também métodos
+
+//O que é um método?
+// Método são funções que executam um ação do objeto.
+
+function apresentacao(nome) {
+  return `Olá tudo bem! Sou ${nome}`;
+}
+
+const valor = apresentacao("Rodrigo");
+
+nayara.falar();
+
+console.log();
+
+const lapiseira = {
+  grafite: 0.7,
+  corLapiseira: "azul",
+  marca: "compactor",
+  temBorracha: true,
+  pontaMetalica: true,
+  temTampaBorracha: true,
+
+  escrever() {
+    console.log("Escrevendo com a lapiseira");
+  },
+
+  trocarGrafite(grafite) {
+    if (grafite === 0.7) {
+      console.log(`trocando o grafite ${grafite}`);
+      return true;
+    } else {
+      console.log(`Grafite não compatível com a lapiseira`);
+    }
+  },
+
+  apagar() {
+    if (!lapiseira.temBorracha) {
+      console.log("Essa lapiseira não pode apagar, pois nao tem borracha");
+    } else {
+      console.log("apagando o texto com a lapiseira");
+    }
+  },
+
+  apertarParaSairPonta() {
+    console.log("apertando para sair ponta");
+  },
+};
+
+//algoritmo para escrever utilizando a lapiseira
+
+if (lapiseira.trocarGrafite(0.3)) {
+  lapiseira.apertarParaSairPonta();
+  lapiseira.escrever();
+  lapiseira.apagar();
+} else {
+  console.log("nao é possivel utilizar a lapiseira");
+}
